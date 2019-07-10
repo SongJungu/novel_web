@@ -1,0 +1,106 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="gbk" />
+  <title>{{title}}</title>
+  <meta name="keywords" content="{{novelname}}"/>
+  <meta name="description" content="{{jianjie}}"/>
+  <meta name="MobileOptimized" content="240"/>
+  <meta name="applicable-device" content="mobile"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="max-age=0" />
+  <meta http-equiv="Cache-Control" content="no-transform " />
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+  </head>
+  <body>
+  <div class="main">
+  <div class="head">
+    <div class="return"><a href="javascript:history.go(-1);">返回</a></div>
+    <div class="nav_name"><h1>{{jianjei}}</h1></div>
+    <div class="homepage"><a href="/">首页</a></div>
+  </div>
+  <div class="nav">
+      <ul>
+          <li><a href="/">首页</a></li>
+          <li><a href="#">分类</a></li>
+          <li><a href="#">排行</a></li>
+          <li><a href="#">完本</a></li>
+          <li><a href="#">待开发</a></li>
+          <div class="clear"></div>
+      </ul>
+  </div>
+  <form method="post" action="/s.php">
+  <div class="searchBox">
+      <div class="s1"><input name="s" class="input1" type="text" placeholder="" /></div>
+      <div class="s2"><input class="input2" type="submit" value=""/></div>
+      <input type="hidden" name="type" value="articlename" />
+  </div>
+  </form>
+  <div class="main1">
+      <div class="catalog">
+          <div class="catalog1">
+              <h1>{{novelname}}</h1>
+              <div class="tu"><img src="{{novelimg}}" width="80" height="112" onerror="this.src='/static/web_img/notbook.png'"/></div>
+              <div class="tab">
+                  <p class="p1">作者：{{writer}}</p>
+                  <p class="p2">更新：{{update}}</p>
+                  <p class="p3">最新：<a style="color:blue;" href="{{lasturl}}">{{lastname}}</a></p>
+                  <div class="tab1">
+                      <p class="p4">{{leixin}}</p>
+                      <div class="clear"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="jj">
+              <div class="infolink">
+                  <div class="nav_p">
+                      <div class="nav_p1"></div>
+                      <div class="nav_p2"><a href="{{firsturl}}">立即阅读</a></div>
+                      <div class="nav_p3"></div>
+                  </div>
+                  <div class="nav_p">
+                      <div class="nav_p1"></div>
+                      <div class="nav_p2"><a href="#" rel="nofollow">待开发</a></div>
+                      <div class="nav_p3"></div>
+                  </div>
+                  <div class="nav_p">
+                      <div class="nav_p1"></div>
+                      <div class="nav_p2"><a href="#" target="_blank">待开发</a></div>
+                      <div class="nav_p3"></div>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+              <p class="p1">小说简介：</p>
+              <p class="p2">{{jianjie}}
+  </p>
+          </div>
+      </div>
+  </div>
+  <div class="info_chapters">
+      <p class="p1">最新章节 ( {{novelname}})</p>
+      <ul class="p2">	{{zhangjie|safe}}</ul>
+  </div> 
+  <div class="footer">
+  <p><a href="/">首 页</a> | <a href="#">待开发</a> | <a href="#">待开发</a> | <a href="#top" rel="nofollow">↑返回顶部</a></p>
+  </div>
+  <div style="display:none">
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+  <script src="https://s22.cnzz.com/z_stat.php?id=1271465116&web_id=1271465116" language="JavaScript"></script>
+  </div>
+  </div>
+  </body>
+  </html>

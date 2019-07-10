@@ -1,0 +1,613 @@
+
+
+<!doctype html>
+<html>
+<head>
+<title>{{inedx_web_title}}</title>
+
+<meta charset="utf-8">
+<meta content="telephone=no" name="format-detection"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="{{ico_url}}" />
+<script>
+    var docEl = document.documentElement;
+    var recalc = function(){
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>=541){
+            clientWidth = 541;
+        }
+        docEl.style.fontSize = 20 * clientWidth/360 + 'px';
+    };
+    recalc();
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    window.addEventListener(resizeEvt, recalc, false);
+</script>
+<link rel="stylesheet" href="/static/css/mobile.css" />
+</head>
+<body _pgid="33">
+	
+    <div class="head">
+        
+        <div class="head_logo"></div>
+
+        <div class="head_ulnk">
+            <a href="#" class="but_search"><em></em></a>
+            <a class="but_client" href="#"><em>new</em>客户端</a>
+        </div>
+    </div>
+
+<div class="menu">
+	<a data-saj='{"click_name":"secondNav","page_module":"shucheng","nav_type":"home"}' href="#" class="active">首页</a>
+	<a data-saj='{"click_name":"secondNav","page_module":"shucheng","nav_type":"fenlei"}' href="#" >分类</a>
+	<a data-saj='{"click_name":"secondNav","page_module":"shucheng","nav_type":"paihang"}' href="#" >排行</a>
+	
+	    <a data-saj='{"click_name":"secondNav","page_module":"shucheng","nav_type":"game"}' id="gameBtn" href="#" >游戏</a>
+	
+	<a data-saj='{"click_name":"secondNav","page_module":"shucheng","nav_type":"shelf"}' href="#" >书架</a>
+</div>
+	<div class="olnk"><script type="text/javascript" src="//static.zongheng.com/upload/fpbds/column/161208477713.js"></script></div>
+	<!-- 最近阅读begin -->
+	<div id="footprint_id"></div>
+	<!-- 最近阅读end -->
+    
+    <div class="home-slider">
+    	<!-- 首页头条begin -->
+    	
+        <div id="J_focus" class="slide_banner">
+            <div class="slider-top-wrap J_slideWrap" id="sliderTop">
+                <ul class="slider-top-pic">
+                	
+                				<li data-saact="clickRecommend" data-saj='{"recommend_type":"homeBanner","pos":"0","book_id":"777614","link":"{{active_getURL1}}"}' data-bookId="777614" data-url="{{active_getURL1}}">
+                        			<img src="{{active_img1}}" alt="{{acitve_novelname1}}" />
+                     			</li>
+                			
+								 <li data-saact="clickRecommend" data-saj='{"recommend_type":"homeBanner","pos":"0","book_id":"777624","link":"{{active_getURL2}}"}' data-bookId="777624" data-url="{{active_getURL2}}">
+                        			<img src="{{active_img2}}" alt="{{acitve_novelname2}}" />
+                     			</li>
+								 <li data-saact="clickRecommend" data-saj='{"recommend_type":"homeBanner","pos":"0","book_id":"777634","link":"{{active_getURL3}}"}' data-bookId="777634" data-url="{{active_getURL3}}">
+                        			<img src="{{active_img3}}" alt="{{acitve_novelname3}}" />
+                     			</li>
+                			
+								 <li data-saact="clickRecommend" data-saj='{"recommend_type":"homeBanner","pos":"0","book_id":"777644","link":"{{active_getURL4}}"}' data-bookId="777644" data-url="{{active_getURL4}}">
+                        			<img src="{{active_img4}}" alt="{{acitve_novelname4}}" />
+                     			</li>
+                			
+                </ul>
+            </div>
+            <div class="indicator">
+            	<i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+        
+        <!-- 首页头条end -->
+        
+        <div class="flex flex--justify home-fenlei">
+            <div class="link-in flex--fluid"><a data-saj='{"click_name":"thirdNav","page_module":"shucheng","nav_type":"free"}' href="/boy"><em></em><i>男频精选</i></a></div>
+            <div class="link-in flex--fluid"><a data-saj='{"click_name":"thirdNav","page_module":"shucheng","nav_type":"nvpin"}' href="/girl"><em></em><i>女频精选</i></a></div>
+        </div>
+    </div>
+
+	<!-- 编辑力荐begin -->
+    <div class="home-card home-top">
+        <div class="home-card-title">
+            <i class="home-icon-tit home-icon-tit-b"></i>
+            <i>编辑力荐</i>
+        </div>
+        <div class="home-card-con">
+        	
+        		<div class="home-book-item flex border-b touch-a" data-bookId="805982" data-url="{{bianji_urlTJ1}}">
+                	<div class="book-img-border"><img src="{{bianji_imgTJ1}}" alt="{{bianji_nameTJ1}}" class="img-border"/></div>
+                	<div class="book-info-sc flex--fluid">
+                    	<h3 class="font-a">{{bianji_nameTJ1}}</h3>
+                    	<div class="desc">{{bianji_jianjieTJ1}}</div>
+                    	<div class="other flex flex--justify">
+                        	<i class="item-label">{{bianji_leixinTJ1}}</i>
+                    	</div>
+                	</div>
+            	</div>
+        	
+        		<div class="home-book-item flex border-b touch-a" data-bookId="826577" data-url="{{bianji_urlTJ2}}">
+                	<div class="book-img-border"><img src="{{bianji_imgTJ2}}" alt="{{bianji_nameTJ2}}" class="img-border"/></div>
+                	<div class="book-info-sc flex--fluid">
+                    	<h3 class="font-a">{{bianji_nameTJ2}}</h3>
+                    	<div class="desc">{{bianji_jianjieTJ2}}</div>
+                    	<div class="other flex flex--justify">
+                        	<i class="item-label">{{bianji_leixinTJ2}}</i>
+                    	</div>
+                	</div>
+            	</div>
+        	
+        		<div class="home-book-item flex border-b touch-a" data-bookId="785803" data-url="{{bianji_urlTJ3}}">
+                	<div class="book-img-border"><img src="{{bianji_imgTJ3}}" alt="{{bianji_nameTJ3}}" class="img-border"/></div>
+                	<div class="book-info-sc flex--fluid">
+                    	<h3 class="font-a">{{bianji_nameTJ3}}</h3>
+                    	<div class="desc">{{bianji_jianjieTJ3}}</div>
+                    	<div class="other flex flex--justify">
+                        	<i class="item-label">{{bianji_leixinTJ3}}</i>
+                    	</div>
+                	</div>
+            	</div>
+        	
+        </div> 
+    </div>
+    <!-- 编辑力荐end -->
+    
+    <!-- 男生必读begin -->
+    <div class="home-card home-boy" alt="男生必读">
+        <div class="home-card-title title-mb flex">
+            <i class="home-icon-tit home-icon-tit-b"></i>
+            <i class="flex--fluid">男生必读</i>
+        </div>
+        <div class="home-card-con flex">
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="720861" data-url="{{boy_url1}}">
+                	<img src="{{boy_img1}}"  data-src="{{boy_img1}}" alt="{{boy_name1}}" class="img-border"/>
+                	<i class="book-name">{{boy_name1}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="720862" data-url="{{boy_url2}}">
+                	<img src="{{boy_img2}}"  data-src="{{boy_img2}}" alt="{{boy_name2}}" class="img-border"/>
+                	<i class="book-name">{{boy_name2}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="730863" data-url="{{boy_url3}}">
+                	<img src="{{boy_img3}}"  data-src="{{boy_img3}}" alt="{{boy_name3}}" class="img-border"/>
+                	<i class="book-name">{{boy_name3}}</i>
+            	</div>
+        	
+        	
+        </div>
+        <div class="home-card-con flex">
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="740864" data-url="{{boy_url4}}">
+				<img src="{{boy_img4}}"  data-src="{{boy_img4}}" alt="{{boy_name4}}" class="img-border"/>
+				<i class="book-name">{{boy_name4}}</i>
+			</div>
+		
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="750865" data-url="{{boy_url5}}">
+				<img src="{{boy_img5}}"  data-src="{{boy_img5}}" alt="{{boy_name5}}" class="img-border"/>
+				<i class="book-name">{{boy_name5}}</i>
+			</div>
+		
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="760866" data-url="{{boy_url6}}">
+				<img src="{{boy_img6}}"  data-src="{{boy_img6}}" alt="{{boy_name6}}" class="img-border"/>
+				<i class="book-name">{{boy_name6}}</i>
+			</div>
+		
+        	
+        </div>
+    </div>
+    <!-- 男生必读end -->
+
+	<!-- 女生爱看begin -->
+    <div class="home-card home-girl">
+        <div class="home-card-title title-mb flex">
+            <i class="home-icon-tit home-icon-tit-b"></i>
+            <i class="flex--fluid">女生爱看</i>
+        </div>
+        <div class="home-card-con flex">
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="833041" data-url="{{girl_url1}}">
+                	<img src="{{girl_img1}}"  data-src="{{girl_img1}}" alt="{{girl_name1}}" class="img-border"/>
+                	<i class="book-name">{{girl_name1}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="833042" data-url="{{girl_url2}}">
+                	<img src="{{girl_img2}}"  data-src="{{girl_img2}}" alt="{{girl_name2}}" class="img-border"/>
+                	<i class="book-name">{{girl_name2}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="833043" data-url="{{girl_url3}}">
+                	<img src="{{girl_img3}}"  data-src="{{girl_img3}}" alt="{{girl_name3}}" class="img-border"/>
+                	<i class="book-name">{{girl_name3}}</i>
+            	</div>
+        	
+        </div>
+        <div class="home-card-con flex">
+            
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="844044" data-url="{{girl_url4}}">
+				<img src="{{girl_img4}}"  data-src="{{girl_img4}}" alt="{{girl_name4}}" class="img-border"/>
+				<i class="book-name">{{girl_name4}}</i>
+			</div>
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="855055" data-url="{{girl_url5}}">
+				<img src="{{girl_img5}}"  data-src="{{girl_img5}}" alt="{{girl_name5}}" class="img-border"/>
+				<i class="book-name">{{girl_name5}}</i>
+			</div>
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="866066" data-url="{{girl_url6}}">
+				<img src="{{girl_img6}}"  data-src="{{girl_img6}}" alt="{{girl_name6}}" class="img-border"/>
+				<i class="book-name">{{girl_name6}}</i>
+			</div>
+        	
+        </div>
+    </div>
+    <!-- 女生爱看end -->
+    
+    <!-- 玄幻仙侠begin -->
+    <div class="home-card">
+        <div class="home-card-title flex">
+            <i class="home-icon-tit home-icon-tit-a"></i>
+            <i class="flex--fluid">玄幻仙侠</i>
+        </div>
+        
+        			<div class="home-book-item flex border-b touch" data-bookId="523438" data-url="{{xuanhuanTJ_url1}}">
+                		<div class="book-img-border"><img src="{{xuanhuanTJ_img1}}" data-src="{{xuanhuanTJ_img1}}" alt="{{xuanhuanTJ_name1}}" class="img-border"/></div>
+                		<div class="book-info-sc flex--fluid">
+                    		<h3 class="font-a">{{xuanhuanTJ_name1}}</h3>
+                    		<div class="desc">{{xuanhuanTJ_jianjie1}}
+
+</div>
+                    		<div class="other flex flex--justify">
+                        		<i class="item-label">{{xuanhuanTJ_leixin1}}</i>
+                    		</div>
+            			</div>
+        			</div>
+        		
+        			<a class="home-row-line flex touch-a border-b" data-bookId="793065" href="{{xuanhuanTJ_url2}}">
+            			<span class="flex--fluid">[{{xuanhuanTJ_leixin2}}]{{xuanhuanTJ_name2}}</span>
+            			<i class="home-icon-arrow home-row-link"></i>
+        			</a>
+        		
+        			<a class="home-row-line flex touch-a border-b" data-bookId="650439" href="{{xuanhuanTJ_url3}}">
+            			<span class="flex--fluid">[{{xuanhuanTJ_leixin3}}]{{xuanhuanTJ_name3}}</span>
+            			<i class="home-icon-arrow home-row-link"></i>
+        			</a>
+        		
+        			<a class="home-row-line flex touch-a border-b" data-bookId="846109" href="{{xuanhuanTJ_url4}}">
+            			<span class="flex--fluid">[{{xuanhuanTJ_leixin4}}]{{xuanhuanTJ_name4}}</span>
+            			<i class="home-icon-arrow home-row-link"></i>
+        			</a>
+        		
+        			<a class="home-row-line flex touch-a border-b" data-bookId="771898" href="{{xuanhuanTJ_url5}}">
+            			<span class="flex--fluid">[{{xuanhuanTJ_leixin5}}]{{xuanhuanTJ_name5}}</span>
+            			<i class="home-icon-arrow home-row-link"></i>
+        			</a>
+        		
+    </div>
+    <!-- 玄幻仙侠end -->
+    
+    <!-- 都市娱乐begin -->
+    <div class="home-card" alt="都市娱乐">
+        <div class="home-card-title flex">
+            <i class="home-icon-tit home-icon-tit-a"></i>
+            <i class="flex--fluid">都市娱乐</i>
+        </div>
+        
+		<div class="home-book-item flex border-b touch" data-bookId="523438" data-url="{{dushiTJ_url1}}">
+			<div class="book-img-border"><img src="{{dushiTJ_img1}}" data-src="{{dushiTJ_img1}}" alt="{{dushiTJ_name1}}" class="img-border"/></div>
+			<div class="book-info-sc flex--fluid">
+				<h3 class="font-a">{{dushiTJ_name1}}</h3>
+				<div class="desc">{{dushiTJ_jianjie1}}
+
+			</div>
+				<div class="other flex flex--justify">
+					<i class="item-label">{{dushiTJ_leixin1}}</i>
+				</div>
+			</div>
+		</div>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="793065" href="{{dushiTJ_url2}}">
+			<span class="flex--fluid">[{{dushiTJ_leixin2}}]{{dushiTJ_name2}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="650439" href="{{dushiTJ_url3}}">
+			<span class="flex--fluid">[{{dushiTJ_leixin3}}]{{dushiTJ_name3}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="846109" href="{{dushiTJ_url4}}">
+			<span class="flex--fluid">[{{dushiTJ_leixin4}}]{{dushiTJ_name4}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="771898" href="{{dushiTJ_url5}}">
+			<span class="flex--fluid">[{{dushiTJ_leixin5}}]{{dushiTJ_name5}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+    </div>
+    <!-- 都市娱乐end -->
+    
+    <!-- 科幻历史begin -->
+    <div class="home-card" alt="科幻历史">
+        <div class="home-card-title flex">
+            <i class="home-icon-tit home-icon-tit-a"></i>
+            <i class="flex--fluid">科幻历史</i>
+        </div>
+		<div class="home-book-item flex border-b touch" data-bookId="523438" data-url="{{kehuanTJ_url1}}">
+			<div class="book-img-border"><img src="{{kehuanTJ_img1}}" data-src="{{kehuanTJ_img1}}" alt="{{kehuanTJ_name1}}" class="img-border"/></div>
+			<div class="book-info-sc flex--fluid">
+				<h3 class="font-a">{{kehuanTJ_name1}}</h3>
+				<div class="desc">{{kehuanTJ_jianjie1}}
+
+</div>
+				<div class="other flex flex--justify">
+					<i class="item-label">{{kehuanTJ_leixin1}}</i>
+				</div>
+			</div>
+		</div>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="793065" href="{{kehuanTJ_url2}}">
+			<span class="flex--fluid">[{{kehuanTJ_leixin2}}]{{kehuanTJ_name2}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="650439" href="{{kehuanTJ_url3}}">
+			<span class="flex--fluid">[{{kehuanTJ_leixin3}}]{{kehuanTJ_name3}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="846109" href="{{kehuanTJ_url4}}">
+			<span class="flex--fluid">[{{kehuanTJ_leixin4}}]{{kehuanTJ_name4}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="771898" href="{{kehuanTJ_url5}}">
+			<span class="flex--fluid">[{{kehuanTJ_leixin5}}]{{kehuanTJ_name5}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+        		
+    </div>
+    <!-- 科幻历史end -->
+    
+    <!-- 热门分类begin -->
+    <div class="home-card" alt="热门作品">
+        <div class="home-card-title flex">
+            <i class="home-icon-tit home-icon-tit-a"></i>
+            <i class="flex--fluid">热门作品</i>
+        </div>
+		<div class="home-book-item flex border-b touch" data-bookId="523438" data-url="{{HOT_url1}}">
+			<div class="book-img-border"><img src="{{HOT_img1}}" data-src="{{HOT_img1}}" alt="{{HOT_name1}}" class="img-border"/></div>
+			<div class="book-info-sc flex--fluid">
+				<h3 class="font-a">{{HOT_name1}}</h3>
+				<div class="desc">{{HOT_jianjie1}}
+
+</div>
+				<div class="other flex flex--justify">
+					<i class="item-label">{{HOT_leixin1}}</i>
+				</div>
+			</div>
+		</div>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="793065" href="{{HOT_url2}}">
+			<span class="flex--fluid">[{{HOT_leixin2}}]{{HOT_name2}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="650439" href="{{HOT_url3}}">
+			<span class="flex--fluid">[{{HOT_leixin3}}]{{HOT_name3}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="846109" href="{{HOT_url4}}">
+			<span class="flex--fluid">[{{HOT_leixin4}}]{{HOT_name4}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+	
+		<a class="home-row-line flex touch-a border-b" data-bookId="771898" href="{{HOT_url5}}">
+			<span class="flex--fluid">[{{HOT_leixin5}}]{{HOT_name5}}</span>
+			<i class="home-icon-arrow home-row-link"></i>
+		</a>
+    </div>
+    <!-- 热门分类end -->
+    
+    <!-- 完本经典begin -->
+    <div class="home-card" alt="完本经典">
+        <div class="home-card-title title-mb flex">
+            <i class="home-icon-tit home-icon-tit-b "></i>
+            <i class="flex--fluid">完本经典</i>
+        </div>
+        <div class="home-card-con flex">
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="385248" data-url="{{wanbenTJ_url1}}">
+                	<img src="{{wanbenTJ_img1}}" data-src="{{wanbenTJ_img1}}" alt="{{wanbenTJ_name1}}" class="img-border"/>
+                	<i class="book-name">{{wanbenTJ_name1}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="385248" data-url="{{wanbenTJ_url2}}">
+                	<img src="{{wanbenTJ_img2}}" data-src="{{wanbenTJ_img2}}" alt="{{wanbenTJ_name2}}" class="img-border"/>
+                	<i class="book-name">{{wanbenTJ_name2}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="385348" data-url="{{wanbenTJ_url3}}">
+                	<img src="{{wanbenTJ_img3}}" data-src="{{wanbenTJ_img3}}" alt="{{wanbenTJ_name3}}" class="img-border"/>
+                	<i class="book-name">{{wanbenTJ_name3}}</i>
+            	</div>
+        	
+        </div>
+    </div>
+    <!-- 完本经典end -->
+    
+    <!-- 新书精选begin -->
+    <div class="home-card" alt="新书精选">
+        <div class="home-card-title title-mb flex">
+            <i class="home-icon-tit home-icon-tit-b"></i>
+            <i class="flex--fluid">新书精选</i>
+        </div>
+        <div class="home-card-con flex">
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="839291" data-url="{{newbookTJ_url1}}">
+                	<img src="{{newbookTJ_img1}}"  data-src="{{newbookTJ_img1}}" alt="{{newbookTJ_name1}}" class="img-border"/>
+                	<i class="book-name">{{newbookTJ_name1}}</i>
+            	</div>
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="839292" data-url="{{newbookTJ_url2}}">
+                	<img src="{{newbookTJ_img2}}"  data-src="{{newbookTJ_img2}}" alt="{{newbookTJ_name2}}" class="img-border"/>
+                	<i class="book-name">{{newbookTJ_name2}}</i>
+            	</div>
+        	
+        	
+        		<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="839393" data-url="{{newbookTJ_url3}}">
+                	<img src="{{newbookTJ_img3}}"  data-src="{{newbookTJ_img3}}" alt="{{newbookTJ_name3}}" class="img-border"/>
+                	<i class="book-name">{{newbookTJ_name3}}</i>
+            	</div>
+        	
+        	
+        </div>
+        <div class="home-card-con flex">
+            
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="849494" data-url="{{newbookTJ_url4}}">
+				<img src="{{newbookTJ_img4}}"  data-src="{{newbookTJ_img4}}" alt="{{newbookTJ_name4}}" class="img-border"/>
+				<i class="book-name">{{newbookTJ_name4}}</i>
+			</div>
+		
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="859595" data-url="{{newbookTJ_url5}}">
+				<img src="{{newbookTJ_img5}}"  data-src="{{newbookTJ_img5}}" alt="{{newbookTJ_name5}}" class="img-border"/>
+				<i class="book-name">{{newbookTJ_name5}}</i>
+			</div>
+		
+        	
+			<div class="flex-fluid home-book-box home-book-box-sc touch" data-bookId="869696" data-url="{{newbookTJ_url6}}">
+				<img src="{{newbookTJ_img6}}"  data-src="{{newbookTJ_img6}}" alt="{{newbookTJ_name6}}" class="img-border"/>
+				<i class="book-name">{{newbookTJ_name6}}</i>
+			</div>
+		
+        </div>
+    </div>
+    <!-- 新书精选end -->
+    
+	
+    
+<script type="text/javascript" src="https://static.zongheng.com/mobile/js/zepto.min.js"></script>
+<script src="https://static.zongheng.com/app/android/js/swipe.js"></script>
+
+	<footer>
+		<!-- 登录之前 -->
+	    <div class="fl" id="sp_unlogin">
+	    	<a href="#" >登录</a> | 
+	    	<a href="#" >注册</a>
+	    </div>
+	    <!-- 登录之后 -->
+	    <div id="sp_nickname" class="fl" style="display: none">
+	    	<a href="3"><span></span></a> | 
+		    <a href="#">退出</a>
+	    </div>
+		<div class="fr">
+			<a href="#">投诉建议</a>
+		</div>
+		<div class="cl0"></div>
+		
+		
+
+<form action="/h5/search" method="GET">
+	<div class="searchbox">
+		<div>
+			<input placeholder="请输入关键字" value="" maxlength="15" name="keywords">
+		</div>
+		<div class="search_go"></div>
+	</div>
+	<input type="hidden" name="field" id="field" value="all"/>
+</form>
+
+		
+		<div>
+			<a href="#">极速版</a> | <a class="#">触屏版</a> | <a href="#">电脑版</a> | <a href="##=pc" >客户端</a>
+		</div>
+		<span class="copyright">{{banquan}}</span>
+	</footer>
+	<script type="text/javascript">
+	(function(){
+	    var logoned = $("#sp_nickname");
+	    var unlogin = $("#sp_unlogin");
+	    
+	    
+	    var _isLogin = getCk("logon");
+	    if(_isLogin != null && _isLogin !="" && _isLogin!="undefined"){
+		    var nickName = (getCk("logon")!= null) ? Base64.decode(getCk("logon").split("|")[3]):null;
+		    unlogin.hide();
+		    logoned.show().find("span").html(nickName);
+	    }
+	    
+	    if($("#footprint_id").length>0){
+	   	 $.ajax({
+	   	        url: '/h5/ajaxGetFootPrint',
+	   	        error: function(){},
+	   	        dataType : 'html',
+	   	        success: function(data){
+	   	            if(data!=null){
+	   	            	$("#footprint_id").append(data);
+	   	            }
+	   	        }
+	   	  })
+	   } 
+	    
+	})()
+	</script>
+
+<script type="text/javascript">
+var mstatSign = {
+	v:'h5',
+	bdcode:'https://hm.baidu.com/hm.gif?si=08a75cda7645e41f2d08825a3a78199b&amp;et=0&amp;nv=1&amp;st=1&amp;v=wap-2-0.3&amp;rnd=1805786000'.replace(/&amp;/g, "&"),
+	haocode:'http://www.hao123.com/t.gif?pid=201&amp;pf=3&amp;lo=0&amp;zhId=&amp;freeFr=&amp;zhTu=1&amp;et=0&amp;nv=1&amp;st=1&amp;v=wap-2-0.3&amp;rnd=1084488447&amp;ucbs=0'.replace(/&amp;/g, "&"),
+	ud:"03"
+};
+
+(function() {
+	window.MSAQ = window.MSAQ || [];
+	var head = document.getElementsByTagName('head')[0];
+	var addStat = document.createElement('script');
+	addStat.setAttribute('type', 'text/javascript');
+	addStat.setAttribute('src', 'https://static.zongheng.com/h5/js/mstat.js');
+	head.appendChild(addStat);
+	addStat.onload = function() {
+		if(!window.ZHReader){
+			mstatGo.send()
+		}
+    }
+})();
+
+</script>
+
+
+<script>
+$(function(){
+    var mfocus = document.querySelector("#J_focus");
+    slide(mfocus).stop();
+        setTimeout(function() {
+            window.GfocusSlide.start();
+        }, 0)
+    function slide(elem) {
+        var wrap = elem.querySelector("div.J_slideWrap"),
+        nav = elem.querySelector("div.indicator");
+        GfocusSlide = swipe(wrap, {
+            auto: 5000,
+            speed: 500,
+            continuous: true,
+            nav: nav
+        });
+        return GfocusSlide
+    }
+
+    //焦点图
+    
+    if(window.devicePixelRatio && window.devicePixelRatio >=2){//判断是否为Retina屏
+        document.querySelector("body").className = "hairlines"
+    } 
+    imgload($(".img-border"));
+    bindTouch(".touch,.touch-a","hover")
+
+    $(".home-book-item,.home-book-box").click(function(){
+        goBook(this);
+    });
+
+    $(".slider-top-pic li").click(function(){
+        var _this = this;
+        function org(){
+            goBook(_this);
+        }
+        MSAQ.push(function(){MSA.c($(_this),org);})
+    });
+
+})
+</script>
+</body>
+</html>
