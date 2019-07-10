@@ -1,0 +1,18 @@
+<novel_name>//*[@id="info"]/h1/text()</novel_name>
+<next_url>//*[@id="newscontent"]/div[1]/ul/li/span[1]/a/@href</next_url>
+<novel_writer>/html/head/meta[14]/@content</novel_writer>
+<novel_jianjie>/html/head/meta[2]/@content</novel_jianjie>
+<novel_leixin>/html/head/meta[13]/@content</novel_leixin>
+<novel_zhenwen>//*[@id="content"]/p/text()</novel_zhenwen> #用XPATH
+<novel_zhangjieURLlist>//*[@id="list"]/dl/dd/a/@href</novel_zhangjieURLlist>
+<novel_zhangjiename>//*[@id="list"]/dl/dd/a/text()</novel_zhangjiename>
+<novel_img>//*[@id="fmimg"]/img/@src</novel_img>
+<web_bianma>gbk</web_bianma>
+<NEXT_HECHENG>123</NEXT_HECHENG>
+<ZhangjieURL_HECHENG>123</ZhangjieURL_HECHENG>
+<HECHENG_URL>https://www.biquge5200.cc</HECHENG_URL>
+<index_url>https://www.biquge5200.cc/xuanhuanxiaoshuo/</index_url>
+<sql_zhanghao>root</sql_zhanghao>
+<sql_mima>gykjganluo520</sql_mima>
+<sql_IP>localhost</sql_IP>
+<sleep_time>2</sleep_time>
